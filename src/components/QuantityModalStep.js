@@ -55,7 +55,7 @@ export const QuantityModalStep = ({ setQuantity, setIsLoading, setTxHash, setSte
             setTxHash(hash)
         })?.on("confirmation", async () => {
             setIsLoading(false)
-            showAlert(`Successfully minted ${quantityValue} NFTs`, "success")
+            showAlert(`${quantityValue} Yellowbois minted!!!`, "success")
         })?.on("error", (e) => {
             setIsLoading(false)
             const { code, message } = parseTxError(e);
@@ -109,6 +109,5 @@ export const QuantityModalStep = ({ setQuantity, setIsLoading, setTxHash, setSte
             <span style={{ margin: "0 2px"}}>/</span>
             <span>{totalNumber ?? "-"}</span>
         </Box>}
-        <Attribution sx={{ mt: 3, justifyContent: "center" }} />
     </div>
 }
