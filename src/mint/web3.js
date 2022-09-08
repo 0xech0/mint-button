@@ -26,7 +26,7 @@ const getMintTx = ({ numberOfTokens }) => {
         return customMintMethod(numberOfTokens)
 
     console.log("Using hardcoded mint method detection")
-    const methodNameVariants = ['mint', 'publicMint', 'mintNFT', 'mintPublic', 'mintSale']
+    const methodNameVariants = ['mint', 'publicMint', 'mintNFTs', 'mintPublic', 'mintSale']
     const name = methodNameVariants.find(n => findMethodByName(n) !== undefined)
     if (!name) {
         alert("Buildship widget doesn't know how to mint from your contract. Contact https://buildship.xyz in Discord to resolve this.")
@@ -107,7 +107,7 @@ export const getMaxSupply = async () => {
     if (!NFTContract)
         return undefined
 
-    const customMaxSupplyMethod = getMethodWithCustomName('maxAmount')
+    const customMaxSupplyMethod = getMethodWithCustomName('maxSupply')
     if (customMaxSupplyMethod)
         return await customMaxSupplyMethod().call()
 
