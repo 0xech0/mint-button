@@ -124,7 +124,7 @@ export const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: '"echo-fuckedarial", Helvetica, sans-serif',
+        fontFamily: '"echo_fucked_arial_regular", Helvetica, sans-serif',
         button: {
             color: buttonTextColor,
             fontSize: "16px !important",

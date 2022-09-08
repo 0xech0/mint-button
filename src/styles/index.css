@@ -1,8 +1,13 @@
-@import url('https://rawcdn.githack.com/0xech0/mint-button/c40e07954fa4e3c6d886a73834a81b26988a79e1/echo-fuckedarial.woff');
-@import url('https://rawcdn.githack.com/0xech0/mint-button/c40e07954fa4e3c6d886a73834a81b26988a79e1/echo-fuckedarial.ttf');
+@font-face {
+    font-family: 'echo_fucked_arial_regular';
+    src: url('echo-fuckedarial_1-webfont.woff') format('woff2'),
+         url('echo-fuckedarial_1-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 .MuiDialog-container {
-    font-family: "echo-fuckedarial", Helvetica Neue, sans-serif !important;
+    font-family: "echo_fucked_arial_regular", Helvetica Neue, sans-serif !important;
 }
 
 .mintModal-content {
