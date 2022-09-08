@@ -63,7 +63,7 @@ export const getMintPrice = async () => {
         case 0:
             const defaultMintPrice = getDefaultMintPrice()
             if (defaultMintPrice === undefined) {
-                alert("Buildship widget doesn't know how to fetch price from your contract. Contact https://buildship.xyz in Discord to resolve this.")
+                alert("Error getting mint price.")
             }
             return defaultMintPrice
         default:
@@ -74,7 +74,7 @@ export const getMintPrice = async () => {
                 const defaultMintPrice = getDefaultMintPrice()
                 console.log("defaultMintPrice", defaultMintPrice)
                 if (defaultMintPrice === undefined) {
-                    alert("Buildship widget doesn't know how to fetch price from your contract. Contact https://buildship.xyz in Discord to resolve this.")
+                    alert("Error getting mint price.")
                 }
                 return defaultMintPrice
             }
@@ -115,7 +115,7 @@ export const getMaxSupply = async () => {
         return await NFTContract.methods.maxSupply().call()
     if (NFTContract.methods.MAX_SUPPLY)
         return await NFTContract.methods.MAX_SUPPLY().call()
-    alert("Widget doesn't know how to fetch maxSupply from your contract. Contact https://buildship.xyz to resolve this.")
+    alert("error getting max supply")
     return undefined
 }
 
@@ -153,7 +153,7 @@ export const mint = async (nTokens) => {
             if (code === -32000) {
                 return 100000 * numberOfTokens;
             }
-            alert(`Error ${message}. Please try refreshing page, check your MetaMask connection or contact us to resolve`);
+            alert(`Error ${message}. Try refreshing page, check your wallet connection or contact us`);
             console.log(e);
         })
     const gasPrice = await web3.eth.getGasPrice();

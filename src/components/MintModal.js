@@ -66,24 +66,23 @@ export const MintModal = (props, ref) => {
                         sx={{ mt: 3, textAlign: "center" }}
                         variant="h4">
                         {txHash
-                            ? `Minting ${quantity} NFT...`
+                            ? `MINTING ${quantity} YELLOWBOIS...`
                             : 'Confirm the transaction in your wallet'}
                     </Typography>
                     {!txHash && <Typography sx={{
-                        mt: 3,
                         pl: 3,
                         pr: 3,
                         color: "#757575",
                         textAlign: "center"
                     }} variant="subtitle2">
-                        Wait up to 2-3 sec until the transaction appears in your wallet
+Confirm the transaction in your wallet
                         <br/><br/>
-                        {!isMobile() && "If you don't see the Confirm button, scroll down ⬇️"}</Typography>}
+                        {!isMobile() && ""}</Typography>}
                 </Box>
             }
             {!isLoading && <>
             <DialogTitleWithClose onClose={handleClose}>
-                <Typography variant="h1">Mint now</Typography>
+                <Typography variant="h2">Mintttttt</Typography>
             </DialogTitleWithClose>
             <DialogContent className="mintModal-content">
                 {step === 1 && <QuantityModalStep

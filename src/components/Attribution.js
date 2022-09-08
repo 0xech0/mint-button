@@ -52,11 +52,7 @@ export const Attribution = (props) => {
             height: 24,
             borderRadius: 24,
         }}>
-            <img
-                width={16}
-                height={16}
-                src={`${getBaseURL()}/images/buildship${window.STYLES?.theme === "dark" ? "-white" : ""}.svg`}
-            />
+         
         </div>
         <Box sx={{
             marginLeft: "2px",

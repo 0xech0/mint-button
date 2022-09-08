@@ -18,7 +18,7 @@ const estimateGasLimit = (tx, txData, defaultGasLimit) => {
         if (code === -32000) {
             return defaultGasLimit;
         }
-        showAlert(`Error ${message}. Please try refreshing page, check your MetaMask connection or contact us to resolve`, "error");
+        showAlert(`Error ${message}. Please try refreshing page, check your MetaMask connection or contact us`, "error");
         console.log(e);
     })
 }
