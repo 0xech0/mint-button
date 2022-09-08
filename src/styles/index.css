@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('raw.githubusercontent.com//0xech0/mint-button/blob/4041ce9ec3b267bb61256d80f913c8a29b704bbc/echo-fuckedarial.woff&display=swap');
 
 .MuiDialog-container {
-    font-family: "Inter", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    font-family: "echo-fuckedarial", Helvetica Neue, sans-serif !important;
 }
 
 .mintModal-content {

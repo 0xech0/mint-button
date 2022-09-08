@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material";
 
 const defaultStyles = {
     backgroundColor: "#ffffff",
-    primaryColor: "#2986CC",
+    primaryColor: "#ecd100",
     primaryTextColor: "#1f1f1f",
     secondaryTextColor: "#9e9e9e",
     hintBackgroundColor: "#9e9e9e",
@@ -14,7 +14,7 @@ const defaultStyles = {
 const darkDefaultStyles = {
     // dark theme uses dialog auto-lightner so using #000 here
     backgroundColor: "#000000",
-    primaryColor: "#2986CC",
+    primaryColor: "#ecd100",
     primaryTextColor: "#ffffff",
     secondaryTextColor: "#9e9e9e",
     hintBackgroundColor: "#9e9e9e",
@@ -124,7 +124,7 @@ export const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: '"Inter", San Francisco, Roboto, Helvetica, sans-serif',
+        fontFamily: '"echo-fuckedarial", Helvetica, sans-serif',
         button: {
             color: buttonTextColor,
             fontSize: "16px !important",
