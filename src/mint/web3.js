@@ -21,7 +21,7 @@ const getMethodWithCustomName = (methodName) => {
 }
 
 const getMintTx = ({ numberOfTokens }) => {
-    const customMintMethod = getMethodWithCustomName('mint')
+    const customMintMethod = getMethodWithCustomName('mintNFT')
     if (customMintMethod)
         return customMintMethod(numberOfTokens)
 
@@ -107,7 +107,7 @@ export const getMaxSupply = async () => {
     if (!NFTContract)
         return undefined
 
-    const customMaxSupplyMethod = getMethodWithCustomName('maxSupply')
+    const customMaxSupplyMethod = getMethodWithCustomName('maxAmount')
     if (customMaxSupplyMethod)
         return await customMaxSupplyMethod().call()
 
