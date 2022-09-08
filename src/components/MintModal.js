@@ -60,7 +60,7 @@ export const MintModal = (props, ref) => {
                         lineHeight: 1,
                         margin: 0
                     }}>
-                        👀
+                        
                     </span>}
                     <Typography
                         sx={{ mt: 3, textAlign: "center" }}
@@ -75,14 +75,13 @@ export const MintModal = (props, ref) => {
                         color: "#757575",
                         textAlign: "center"
                     }} variant="subtitle2">
-Confirm the transaction in your wallet
                         <br/><br/>
                         {!isMobile() && ""}</Typography>}
                 </Box>
             }
             {!isLoading && <>
             <DialogTitleWithClose onClose={handleClose}>
-                <Typography variant="h2">Mintttttt</Typography>
+                <Typography variant="h2">ONE LAST MINT</Typography>
             </DialogTitleWithClose>
             <DialogContent className="mintModal-content">
                 {step === 1 && <QuantityModalStep
