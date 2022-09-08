@@ -1,4 +1,5 @@
-@import url('https://github.com/0xech0/mint-button/blob/edbe572ed868eab2e6183233b16eca6c8a142cd4/echo-fuckedarial.woff?raw=true');
+@import url('https://rawcdn.githack.com/0xech0/mint-button/c40e07954fa4e3c6d886a73834a81b26988a79e1/echo-fuckedarial.woff');
+@import url('https://rawcdn.githack.com/0xech0/mint-button/c40e07954fa4e3c6d886a73834a81b26988a79e1/echo-fuckedarial.ttf');
 
 .MuiDialog-container {
     font-family: "echo-fuckedarial", Helvetica Neue, sans-serif !important;
