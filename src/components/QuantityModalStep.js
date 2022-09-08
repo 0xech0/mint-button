@@ -84,7 +84,7 @@ export const QuantityModalStep = ({ setQuantity, setIsLoading, setTxHash, setSte
                 step={1}
                 marks={marks}
                 min={1}
-                max={maxTokens}
+                max={20}
             />
         </Box>}
         <Button

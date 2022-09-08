@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'Lato';
-    src: local('Lato'), url(./fonts/Lato-Regular.otf) format('opentype');
-  }
+
 @font-face {
     font-family: 'echo_fucked_arial_regular';
-    src: local('echo_fucked_arial_regular'), url(.fonts/echo-fuckedarial_1-webfont.woff) format('woff'),
-    src: local('echo_fucked_arial_regular'), url(.fonts/echo-fuckedarial_1-webfont.woff2) format('woff2'),
+    src: local('echo_fucked_arial_regular'), url(.fonts/echo-fuckedarial_1-webfont.woff) format('woff');
+    src: local('echo_fucked_arial_regular'), url(.fonts/echo-fuckedarial_1-webfont.woff2) format('woff2');
 
-    format('woff2'),
-    url('https://rawcdn.githack.com/0xech0/mint-button/57c7c4b66503c373ca9caf96b8f681baa74111ad/src/styles/echo-fuckedarial_1-webfont.woff') 
-    format('woff');
-    font-weight: normal;
-    font-style: normal;
 
 }
 .MuiDialog-container {
